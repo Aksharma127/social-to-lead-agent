@@ -1,0 +1,11 @@
+[project]
+name = "social-to-lead-agent"
+version = "0.1.0"
+description = "Production-style agentic workflow for social-to-lead conversion"
+requires-python = ">=3.10"
+
+[tool.black]
+line-length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
