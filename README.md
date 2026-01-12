@@ -25,7 +25,36 @@ The flow looks like this:
 Everything is orchestrated through a **central agent graph**.
 
 ---
-
+project/
+├── src/
+│ ├── agent/
+│ │ ├── graph.py # LangGraph workflow & routing
+│ │ ├── nodes.py # Agent nodes (intent, RAG, lead flow)
+│ │ └── state.py # Typed conversation state
+│ ├── intent/
+│ │ └── classifier.py # Intent detection logic
+│ ├── rag/
+│ │ ├── knowledge_base.py # RAG setup & retrieval
+│ │ └── data/
+│ │ └── autostream_kb.json
+│ ├── tools/
+│ │ └── lead_capture.py # Mock backend lead capture tool
+│ ├── utils/
+│ │ ├── config.py # Central configuration
+│ │ └── logger.py # Logging setup
+│ └── main.py # CLI entry point
+├── tests/
+│ ├── test_intent.py
+│ ├── test_rag.py
+│ └── test_conversation.py
+├── docs/
+│ └── architecture.md
+├── .env.example
+├── .gitignore
+├── requirements.txt
+├── pyproject.toml
+└── README.md
+---
 ## 2. Core Architectural Principles
 
 Before going into components, it’s important to understand the principles guiding the design.
