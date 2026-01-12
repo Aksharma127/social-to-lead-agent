@@ -24,36 +24,36 @@ The flow looks like this:
 
 Everything is orchestrated through a **central agent graph**.
 
----
-project/
-├── src/
-│ ├── agent/
-│ │ ├── graph.py # LangGraph workflow & routing
-│ │ ├── nodes.py # Agent nodes (intent, RAG, lead flow)
-│ │ └── state.py # Typed conversation state
-│ ├── intent/
-│ │ └── classifier.py # Intent detection logic
-│ ├── rag/
-│ │ ├── knowledge_base.py # RAG setup & retrieval
-│ │ └── data/
-│ │ └── autostream_kb.json
-│ ├── tools/
-│ │ └── lead_capture.py # Mock backend lead capture tool
-│ ├── utils/
-│ │ ├── config.py # Central configuration
-│ │ └── logger.py # Logging setup
-│ └── main.py # CLI entry point
-├── tests/
-│ ├── test_intent.py
-│ ├── test_rag.py
-│ └── test_conversation.py
-├── docs/
-│ └── architecture.md
-├── .env.example
-├── .gitignore
-├── requirements.txt
-├── pyproject.toml
-└── README.md
+---<br>
+<p>project/<br>
+├── src/<br>
+│ ├── agent/<br>
+│ │ ├── graph.py # LangGraph workflow & routing<br>
+│ │ ├── nodes.py # Agent nodes (intent, RAG, lead flow)<br>
+│ │ └── state.py # Typed conversation state<br>
+│ ├── intent/<br>
+│ │ └── classifier.py # Intent detection logic<br>
+│ ├── rag/<br>
+│ │ ├── knowledge_base.py # RAG setup & retrieval<br>
+│ │ └── data/<br>
+│ │ └── autostream_kb.json<br>
+│ ├── tools/<br>
+│ │ └── lead_capture.py # Mock backend lead capture tool<br>
+│ ├── utils/<br>
+│ │ ├── config.py # Central configuration<br>
+│ │ └── logger.py # Logging setup<br>
+│ └── main.py # CLI entry point<br>
+├── tests/<br>
+│ ├── test_intent.py<br>
+│ ├── test_rag.py<br>
+│ └── test_conversation.py<br>
+├── docs/<br>
+│ └── architecture.md<br>
+├── .env.example<br>
+├── .gitignore<br>
+├── requirements.txt<br>
+├── pyproject.toml<br>
+└── README.md<br> </p>
 ---
 ## 2. Core Architectural Principles
 
